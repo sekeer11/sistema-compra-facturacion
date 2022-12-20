@@ -109,7 +109,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/4.1/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'es-es'
 
 TIME_ZONE = 'America/Havana'
 
@@ -124,6 +124,10 @@ USE_TZ = True
 STATIC_URL = 'static/'
 # Variable para definir la carpeta de los archivos estaticos del proyecto
 STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
+
+# Variables para establecer rutas de login y logout del proyecto
+LOGIN_REDIRECT_URL = '/'
+LOGOUT_REDIRECT_URL = '/login/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
